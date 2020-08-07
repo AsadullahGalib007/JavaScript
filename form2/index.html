@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<form>
+	<label>Type email address:
+		<input type="email" id="email_addr" name="email1" placeholder="xyz@email.com" required><br>
+	</label>
+
+	<label>Re-Type email address:
+		<input type="email" id="email_repeat" name="email2" placeholder="xyz@email.com" required onchange="check()"><br>
+	</label>
+
+	<input type="submit" value="Confirm Emails!" onclick="return check();">
+</form>
+</body>
+</html>

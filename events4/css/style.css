@@ -1,0 +1,13 @@
+.close{
+	display: none;
+}
+
+.open{
+	display: block;
+}
+
+button{
+	width: flex;
+	height: flex;
+	background-color: #00ccee;
+}
