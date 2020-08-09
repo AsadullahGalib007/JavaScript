@@ -15,7 +15,7 @@ function Circle(radius) {
 	this.radius = radius;
 	this.getArea = function(){
 		return Math.PI * Math.pow(this.radius, 2);
-	}
+	};
 }
 
 var myCircle = new Circle(10);
@@ -24,3 +24,22 @@ var myCircle = new Circle(10);
 console.log(myCircle);				//Circle{...}
 console.log(myCircle.radius);		//Circle{...}
 console.log(myCircle.getArea());	//314.1592653589793		
+
+
+
+// Prototype
+function Sqr(arm){
+	this.arm = arm;
+}
+Sqr.prototype.getAreaS = function() {
+	return this.arm * this.arm;
+};
+
+var mySqr = new Sqr(7);
+console.log(mySqr);
+console.log(mySqr.getAreaS());
+
+
+var myOtherSqr = new Sqr(101);
+console.log(myOtherSqr);
+console.log(myOtherSqr.getAreaS());
